@@ -4,7 +4,7 @@
   "description": "A NodeJS module that provides the core Battleship-Galactica game, with observables for players.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha test/**/*.js src/**/*.spec.js src/**/*.test.js",
+    "test": "nyc --all --check-coverage --lines 100 --functions 100 --branches 100 --statements 100 mocha test/**/*.js src/**/*.spec.js src/**/*.test.js",
     "eslint": "eslint --fix **/*.js --no-ignore .eslintrc.js"
   },
   "repository": {
@@ -27,6 +27,16 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^11.8.0"
+  },
+  "nyc": {
+    "exclude": [
+      "src/**/*.spec.js",
+      "test/**/*.js"
+    ],
+    "include": [
+      "src/**/*.js"
+    ]
   }
 }

@@ -1,2 +1,3 @@
 node_modules/
 yarn*
+.nyc_output/
