@@ -1,7 +1,7 @@
-describe('mocha test from `test` directory', function() {
-	it('should pass', function(done) {
-		setTimeout(() => {
-			done();
-		}, 100);
-	});
+describe('mocha test for `test/**/*.js`', function () {
+  it('should pass', function (done) {
+    setTimeout(() => {
+      done();
+    }, 100);
+  });
 });
