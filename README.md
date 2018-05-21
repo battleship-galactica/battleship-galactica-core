@@ -1,4 +1,5 @@
 # battleship-galactica-core (WIP)
+[![CircleCI](https://circleci.com/gh/battleship-galactica/battleship-galactica-core/tree/integration.svg?style=svg)](https://circleci.com/gh/battleship-galactica/battleship-galactica-core/tree/integration)
 
 A NodeJS module that provides the core Battleship-Galactica game, with observables for players.
 
