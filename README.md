@@ -1,4 +1,4 @@
-# battleship-galactica-core
+# battleship-galactica-core (WIP)
 
 A NodeJS module that provides the core Battleship-Galactica game, with observables for players.
 
